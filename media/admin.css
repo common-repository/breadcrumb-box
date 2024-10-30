@@ -1,0 +1,125 @@
+/*
+ * Breadcrumb Box: http://photoboxone.com/
+ */
+
+.clearfix:before,
+.clearfix:after{
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+	overflow: hidden
+}
+
+.breadcrumb_box_settings{
+	display: block
+}
+	.breadcrumb_box_settings img{
+		max-width: 100%;
+	}
+	.breadcrumb_box_settings em,
+	.breadcrumb_box_settings i{
+		font-style: italic;
+	}
+	.breadcrumb_box_settings strong,
+	.breadcrumb_box_settings b{
+		font-weight: bold;
+	}
+	.breadcrumb_box_advanced label{
+		display: inline-block;
+		min-width: 200px;
+		max-width: 100%;
+		vertical-align: top;
+	}
+	.breadcrumb_box_advanced .inputbox{
+		display: inline-block;
+		width: 280px;
+		max-width: 100%;
+	}
+	.breadcrumb_box_settings .col-md-6{
+		float: left;
+		width: 50%;
+		padding: 0 10px;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.breadcrumb_box_tabmenu {
+		padding: 0 0 0 10px;
+		border-bottom: 1px solid #999;
+	}
+		.breadcrumb_box_tabmenu ul{
+			margin: 0;
+			padding: 0;
+		}
+			.breadcrumb_box_tabmenu li{
+				display: inline-block;
+				padding: 5px 10px;
+				border: 1px solid #999;
+				margin-bottom: -1px;
+				cursor: pointer;
+				background: #e5e5e5;
+				color: #555;
+				font-weight: bold;
+			}
+			.breadcrumb_box_tabmenu li:hover{
+				background: #fff;
+				color: #444;
+			}
+			.breadcrumb_box_tabmenu li.active{
+				border-bottom: 1px solid #f1f1f1;
+				background: #f1f1f1;
+				color: #000;
+			}
+	.breadcrumb_box_tabitem {
+		padding: 10px;
+		display: none;
+	}
+	.breadcrumb_box_tabitem.active {
+		display: block;
+	}
+		.breadcrumb_box_detail_form .message-box{
+			padding: 10px;
+			border: 1px solid #ddd;
+			background: #f7f7f7;
+		}
+	
+@media screen and ( max-width: 766px )
+{
+	.breadcrumb_box_settings .col-md-6{
+		float: none;
+		width: auto;
+	}
+}
+.breadcrumb_box_links{
+	padding-bottom: 10px;
+	min-height: 10px;
+	height: 10px;
+	height: auto !important;	
+}
+	.breadcrumb_box_links li{
+		display:block;
+		float:left;
+		padding-right: 15px;
+		line-height: 20px
+	}
+		.breadcrumb_box_links li img{
+			vertical-align: middle;
+		}
+		.breadcrumb_box_links li strong{
+			font-weight: normal;
+		}
+		.breadcrumb_box_links li em{
+			font-style: none;
+		}
+.inline-block{
+	display: inline-block;
+}
+.inline-table{
+	display: inline-table;
+}
+.display-table{
+	display: table;
+}
+.table-cell{
+	display: table-cell;
+}
